@@ -26,23 +26,25 @@
     margin: 0px 10px;
     font-family: Palatino;
     color: #EAF2E3;
+    font-size: 1px;
 }
 
-h3{
-font-size: 1.6vw;
+h3 {
+font-size: 26px;
 }
 
-h1{
+h1 {
     font-size: 65px;
 }
 
 .hero{
     z-index: 10;
     top: -600px;
-    padding: 0px 40px;
+    padding: 0px 20px;
     color: #ffffff;
-    font-style: Verdana;
+    font-family: Verdana;
     position: relative;
+    font-size: 32px;
 }
 
 .top-links{
@@ -115,14 +117,14 @@ h1{
 }
 
 .paragraph-container{
-    margin: 30px 60px 0px 30px;
+    margin: 0px 0px 0px 0px;
     border-radius: 5px;
     position: relative;
-    width: 60vw;
+    width: 1200px;
 }
 
 .paragraph {
-    font-size: 1.8vw;
+    font-size: 28px;
     border-radius: 5px;
     z-index: 10;
     position: relative;
@@ -138,7 +140,8 @@ h1{
 }
 
 .Bio {
- margin: 0px 360px;
+    font-size: 60px;
+    margin: 0px 500px;
 }
 
 
@@ -189,7 +192,8 @@ h1{
 }
 
 .portfolio-title{
-    margin: 0px 130px;
+    margin: 0px 790px;
+    font-size: 60px;
 }
 
 .portfolio {
@@ -209,6 +213,7 @@ h1{
 .contact-title {
     padding: 0px 200px;
     font-family: Palatino;
+    font-size: 50px
 }
 
 .contact-container{
