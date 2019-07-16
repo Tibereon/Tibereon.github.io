@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.container {
+    width: 100%;
+    overflow: auto;
+    border: 1px solid #FF0FA8;
+}
+
+.top-bar{
+    overflow: auto;
+    font-family:  'Lucida Console', Monaco, monospace;
+    background-color: #EEC643
+}
+
+.top-stuff  {
+    position: relative;
+}
+
+
+.name {
+    float: left;
+    margin: 5px 50px;
+    font-family: Palatino;
+    color: #EAF2E3;
+}
+
+h3{
+font-size: 1.6vw;
+}
+
+h1{
+    font-size: 65px;
+}
+
+.hero{
+    z-index: 10;
+    top: -600px;
+    padding: 0px 40px;
+    color: #ffffff;
+    font-style: Verdana;
+    position: relative;
+}
+
+.top-links{
+    float: right;
+}
+
+.top-links button {
+    color: #EAF2E3;
+    border: 3px solid #EAF2E3;
+    background-color: Transparent;
+    font-size: 20px;
+    padding: 5px 40px;
+    margin: 0px 100px;
+    border-radius: 3px;
+}
+
+
+/*--Image stuff--*/
+
+.landing-container{
+    width:  100%;
+    height: 1000px;
+}
+
+.landing-image {
+    width: 100%;
+    height: 1000px;
+}
+
+.sunset-container {
+    float: right;
+    border: 1px solid #040850;
+    overflow: auto;
+    position: relative;
+}
+
+.sunset-image{
+    float: right ;
+    width: 500px;
+    height: 50%;
+}
+
+/*--Logo stuff--*/
+
+.logo-links{
+    margin: 5px 190px;
+}
+
+.instagram-image{
+    width: 220px;
+    height: 220px;
+}
+
+.git-image{
+    width: 200px;
+    height: 200px;
+}
+
+.linkedin-image{
+    width: 200px;
+    height: 200px;
+}
+
+
+/*--Image stuff--*/
+
+.bio-container {
+    background-color: #ffcc00;
+    overflow: auto;
+}
+
+.paragraph-container{
+    margin: 30px 60px 0px 30px;
+    border-radius: 5px;
+    position: relative;
+    width: 60vw;
+}
+
+.paragraph {
+    font-size: 1.8vw;
+    border-radius: 5px;
+    z-index: 10;
+    position: relative;
+    margin: 10px 30px;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+    border: 4px solid #008000;
+}
+
+@media screen and (max-width: 1900px) {
+    .paragraph{
+        width: 800px;
+    }
+}
+
+.Bio {
+ margin: 0px 360px;
+}
+
+
+/*----Portfolio-stuff----*/
+
+.portfolio-container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 1rem;
+}
+
+.responsive-image {
+    height: 300px;
+    width: 300px;
+}
+
+@media screen and (min-width: 600px) {
+    .grid {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .cell {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .cell {
+        width: calc(100% / 3);
+    }
+}
+
+.cell {
+    margin: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+    .cell {
+        width: calc(50% - 2rem);
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .cell {
+        width: calc(33.3333% - 2rem);
+    }
+}
+
+.portfolio-title{
+    margin: 0px 130px;
+}
+
+.portfolio {
+    background: #61E8E1;
+}
+/*----contact-me-stuff*/
+
+.contact-me {
+     width: 100%;
+     overflow: auto;
+     border: 1px solid #FF0FA8;
+     padding: 30px 200px;
+    font-size: 30px;
+    font-family: Palatino;
+ }
+
+.contact-title {
+    padding: 0px 200px;
+    font-family: Palatino;
+}
+
+.contact-container{
+    width: 100%;
+    overflow: auto;
+    border: 1px solid #FF0FA8;
+    padding: 90px 50px;
+    background-color: #FC7753;
+}
