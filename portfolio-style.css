@@ -66,12 +66,13 @@ h1 {
 
 .landing-container{
     width:  100%;
-    height: 1000px;
+    height: 800px;
+    background-size: cover
 }
 
 .landing-image {
     width: 100%;
-    height: 1000px;
+    height: 800px;
 }
 
 .sunset-container {
@@ -79,12 +80,13 @@ h1 {
     border: 1px solid #040850;
     overflow: auto;
     position: relative;
+    height: 800px;
 }
 
 .sunset-image{
     float: right ;
     width: 500px;
-    height: 50%;
+    height: 100%;
 }
 
 /*--Logo stuff--*/
@@ -112,8 +114,9 @@ h1 {
 /*--Image stuff--*/
 
 .bio-container {
-    background-color: #ffcc00;
+    background-color: #EF3054;
     overflow: auto;
+    text-align: center;
 }
 
 .paragraph-container{
@@ -128,7 +131,7 @@ h1 {
     border-radius: 5px;
     z-index: 10;
     position: relative;
-    margin: 10px 30px;
+    margin: 10px 55px;
     font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
     border: 4px solid #008000;
 }
@@ -139,9 +142,19 @@ h1 {
     }
 }
 
+.bio-title-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .Bio {
     font-size: 60px;
-    margin: 0px 500px;
+    margin: 0px 450px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90px;
+
 }
 
 
@@ -191,13 +204,25 @@ h1 {
     }
 }
 
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .portfolio-title{
     margin: 0px 790px;
     font-size: 60px;
+    text-align: center;
+
+
 }
 
 .portfolio {
-    background: #61E8E1;
+    background: #43AA8B;
+    align: center;
+
 }
 /*----contact-me-stuff*/
 
