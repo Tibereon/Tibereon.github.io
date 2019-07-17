@@ -29,6 +29,11 @@
     font-size: 1px;
 }
 
+h3 {
+font-size: 26px;
+}
+
+
 .hero{
     z-index: 10;
     top: -600px;
@@ -124,10 +129,9 @@
 }
 
 .paragraph-container{
-    margin: 0px 0px 0px 0px;
-    border-radius: 5px;
-    position: relative;
-    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .paragraph {
@@ -136,7 +140,7 @@
     z-index: 10;
     position: relative;
     margin: 10px 55px;
-    font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-style: normal; font-variant: normal; font-weight: 700; line-height: 29.4px;
     border: 4px solid #008000;
 }
 
