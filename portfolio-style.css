@@ -29,14 +29,6 @@
     font-size: 1px;
 }
 
-h3 {
-font-size: 26px;
-}
-
-h1 {
-    font-size: 65px;
-}
-
 .hero{
     z-index: 10;
     top: -600px;
@@ -46,6 +38,18 @@ h1 {
     position: relative;
     font-size: 32px;
 }
+
+.squire {
+    z-index: 10;
+    top: -640px;
+    padding: 0px 85px;
+    color: #ffffff;
+    font-family: Tahoma, Geneva, sans-serif;
+    position: relative;
+    font-size: 22px;
+
+}
+
 
 .top-links{
     float: right;
