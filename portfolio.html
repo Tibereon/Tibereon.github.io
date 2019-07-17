@@ -1,19 +1,18 @@
-<!Doctype html>
+<index.html>
 <html lang="en">
     <head>
         <title>Portfolio page</title>
+        <link rel ="stylesheet" type="text/css" href="normalise.css">
         <meta name="viewport contents" content="device-width, initial-scale=1.0">
         <link rel ="stylesheet" type="text/css" href="portfolio-style.css">
-        <link rel ="stylesheet" type="text/css" href="normalise.css">
     </head>
     <body>
         <header>
-
-            <section class="top-bar">
+            <section class="nav-bar">
                 <div class="name">
                     <h3>Matthew Hammond</h3>
                 </div>
-                <div class="top-links">
+                <div class="nav-links">
                     <a href="#bio"><button type="button">Bio</button></a>
                     <a href="#portfolio"><button type="button">Portfolio</button></a>
                     <a href="#contact"><button type="button">Contact me</button></a>
@@ -22,7 +21,7 @@
 
             <section class="landing">
                 <div class="landing-container">
-                    <img class="landing-image" src="./Assets/aerial.jpg">
+                    <img class="landing-image" src="./Assets/aerial.jpg" alt="landing-photograph">
                     <div class="hero">
                         <h1>Matthew Hammond</h1>
                     </div>
@@ -35,22 +34,62 @@
             <section class="bio-container">
                 <div class="background" id="bio">
                     <div class="sunset-container">
-                        <img class="sunset-image" src="./Assets/MOON.jpeg">
+                        <img class="sunset-image" src="./Assets/MOON.jpeg" alt="Sunset image">
                     </div>
                         <div class="bio-title-container">
                             <h1 class="Bio">Bio</h1>
                         </div>
                         <div class="paragraph-container">
-                            <p class="paragraph">
+                            <p class="bio-paragraph">
                                 Hey there. I'm currently learning to be a full-stack web-developer at Mayden academy.
-                                I consider my self a driven and motivated individual, who enjoys creative capacity and
-                                challenging my skills. I am always learning new things and adapting to succeed. I enjoy
-                                reading and excercising, comedy and coding and am passtionate about technology. I enjoy
+                                I consider myself a driven and motivated individual, who enjoys
+                                working in a creative capacity and challenging my skills. I am
+                                always learning new things and adapting to succeed. I enjoy
+                                reading, excercising, comedy and coding and am passtionate about technology. I enjoy
                                 working in teams, and am individually industrious. I am a strong believer in positive
                                 work enviroments, and am a certified scrum master.
                             </p>
                         </div>
                     </div>
+                <div class="title-container">
+                    <h1 class="tech-title"> My Technologies</h1>
+                </div>
+                <div class="tech-container">
+                    <div class="container">
+                        <div class="grid">
+                            <div class="bio-container-cell">
+                                <img src="./Assets/node.png" class="tech-logo" alt="Axolotl" />
+                            </div>
+                            <div class="bio-container-cell">
+                                <img src="./Assets/github.png" class="tech-logo" alt="Axolotl" />
+                            </div>
+                            <div class="bio-container-cell">
+                                <img src="./Assets/html5logo.png" class="tech-logo" alt="Axolotl" />
+                            </div>
+                            <div class="bio-container-cell">
+                                <img src="./Assets/js.png" class="tech-logo" alt="Axolotl" />
+                            </div>
+                            <div class="bio-container-cell">
+                                <img src="./Assets/mysql.png" class="tech-logo" alt="Axolotl" />
+                            </div>
+                            <div class="bio-container-cell">
+                                <img src="./Assets/icons8-css3.png" class="tech-logo" alt="Axolotl" />
+                            </div>
+                            <div class="bio-container-cell">
+                                <img src="./Assets/react.png" class="tech-logo" alt="Axolotl" />
+                            </div>
+                            <div class="bio-container-cell">
+                                <img src="./Assets/phpstorm.png" class="tech-logo" alt="Axolotl" />
+                            </div>
+                            <div class="bio-container-cell">
+                                <img src="./Assets/PHP.png" class="tech-logo" alt="Axolotl" />
+                            </div>
+                            <div class="bio-container-cell">
+                                <img src="./Assets/scrum.png" class="tech-logo" alt="Axolotl" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
             <!-------------------------------------------->
             <section class="portfolio" id="portfolio">
@@ -60,27 +99,44 @@
                 <div class="portfolio-container">
                     <div class="container">
                         <div class="grid">
-                            <div class="cell">
-                                <img src="./Assets/place-axolotl.png" class="responsive-image" />
+                            <div class="portfolio-cell">
+                                <img src="./Assets/place-axolotl.png" class="responsive-image" alt="Axolotl" />
+                                <div class="overlay">
+                                    <p class="img-description">One happy boy.</p>
+                                </div>
                             </div>
-                            <div class="cell">
-                                <img src="./Assets/place-axolotl.png" class="responsive-image" />
+                            <div class="portfolio-cell">
+                                <img src="./Assets/place-axolotl.png" class="responsive-image" alt="Axolotl" />
+                                <div class="overlay">
+                                    <p class="img-description">One happy boy.</p>
+                                </div>
                             </div>
-                            <div class="cell">
-                                <img src="./Assets/place-axolotl.png" class="responsive-image" />
+                            <div class="portfolio-cell">
+                                <img src="./Assets/place-axolotl.png" class="responsive-image" alt="Axolotl" />
+                                <div class="overlay">
+                                    <p class="img-description">One happy boy.</p>
+                                </div>
                             </div>
-                            <div class="cell">
-                                <img src="./Assets/place-axolotl.png" class="responsive-image" />
+                            <div class="portfolio-cell">
+                                <img src="./Assets/place-axolotl.png" class="responsive-image" alt="Axolotl" />
+                                <div class="overlay">
+                                    <p class="img-description">One happy boy.</p>
+                                </div>
                             </div>
-                            <div class="cell">
-                                <img src="./Assets/place-axolotl.png" class="responsive-image" />
+                            <div class="portfolio-cell">
+                                <img src="./Assets/place-axolotl.png" class="responsive-image" alt="Axolotl" />
+                                <div class="overlay">
+                                    <p class="img-description">One happy boy.</p>
+                                </div>
                             </div>
-                            <div class="cell">
-                                <img src="./Assets/place-axolotl.png" class="responsive-image" />
+                            <div class="portfolio-cell">
+                                <img src="./Assets/place-axolotl.png" class="responsive-image" alt="Axolotl" />
+                                <div class="overlay">
+                                    <p class="img-description">One happy boy.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </section>
             <!-------------------------------------------->
@@ -89,18 +145,19 @@
                     <h1 class="contact-title">Contact me</h1>
                 </div>
                 <div class="contact-me">
-                    <p>My email: matthew.ian.hammond@gmail.com</p>
-                    <p>phone number: 4352563654</p>
-                    <p>Github account</p>
-
+                    <p>Send me an email: matthew.ian.hammond@gmail.com</p>
+                    <p>Call me at: 4352563654</p>
+                    <p>Github account: Tibereon</p>
                 </div>
                 <div class="logo-links">
-                    <img class="instagram-image" src="./Assets/instagram.svg">
-                    <img class="git-image" src="./Assets/git.svg">
-                    <img class="linkedin-image" src="./Assets/linkedin.svg">
+                    <a href="https://www.instagram.com/"><img class="instagram-image" src="./Assets/instagram.svg"
+                                                                  alt="Instagram logo"></a>
+                    <a href="https://github.com/"><img class="git-image" src="./Assets/git.svg"
+                                                       alt="Git logo"></a>
+                    <a href="https://uk.linkedin.com/"><img class="linkedin-image" src="./Assets/linkedin.svg"
+                                                            alt="Linkedin logo"></a>
                 </div>
             </section>
-
         </header>
     </body>
 </html>

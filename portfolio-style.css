@@ -5,6 +5,8 @@
 
 }
 
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -12,39 +14,36 @@ html {
 .container {
     width: 100%;
     overflow: auto;
-    border: 1px solid #FF0FA8;
 }
 
-.top-bar{
+.nav-bar{
     overflow: auto;
     font-family:  'Lucida Console', Monaco, monospace;
-    background-color: #EEC643
+    background-color: #EEC643;
 }
-
-.top-stuff  {
-    position: relative;
-}
-
 
 .name {
     float: left;
     margin: 0px 10px;
-    font-family: Palatino;
+    font-family: Palatino, Tahoma, sans-serif;
     color: #EAF2E3;
-    font-size: 1px;
+    font-size: 22px;
+
 }
 
-h3 {
-font-size: 26px;
+@media screen and (max-width: 1100px) {
+    .name {
+        margin: 0px 4px;
+        font-size: 18px
+    }
 }
 
-
-.hero{
+.hero {
     z-index: 10;
     top: -600px;
     padding: 0px 20px;
     color: #ffffff;
-    font-family: Verdana;
+    font-family: Verdana, Tahoma, sans-serif;
     position: relative;
     font-size: 32px;
 }
@@ -57,15 +56,13 @@ font-size: 26px;
     font-family: Tahoma, Geneva, sans-serif;
     position: relative;
     font-size: 22px;
-
 }
 
-
-.top-links{
+.nav-links {
     float: right;
 }
 
-.top-links button {
+.nav-links button {
     color: #EAF2E3;
     border: 3px solid #EAF2E3;
     background-color: Transparent;
@@ -73,12 +70,29 @@ font-size: 26px;
     padding: 0px 40px;
     margin: 0px 100px;
     border-radius: 3px;
+
+}
+
+@media screen and (max-width: 1400px) {
+    .nav-links button{
+        margin: 0px 40px;
+        padding: 0px 20px;
+    }
+}
+
+
+@media screen and (max-width: 1100px) {
+    .nav-links button{
+        margin: 0px 4px;
+        padding: 0px 5px;
+        font-size: 14px;
+    }
 }
 
 
 /*--Image stuff--*/
 
-.landing-container{
+.landing-container {
     width:  100%;
     height: 800px;
     background-size: cover
@@ -97,7 +111,7 @@ font-size: 26px;
     height: 800px;
 }
 
-.sunset-image{
+.sunset-image {
     float: right ;
     width: 500px;
     height: 100%;
@@ -105,25 +119,25 @@ font-size: 26px;
 
 /*--Logo stuff--*/
 
-.logo-links{
+.logo-links {
     margin: 5px 190px;
 }
 
-.instagram-image{
+.instagram-image {
     width: 220px;
     height: 220px;
+
 }
 
-.git-image{
+.git-image {
     width: 200px;
     height: 200px;
 }
 
-.linkedin-image{
+.linkedin-image {
     width: 200px;
     height: 200px;
 }
-
 
 /*--Image stuff--*/
 
@@ -131,31 +145,36 @@ font-size: 26px;
     background-color: #EF3054;
     overflow: auto;
     text-align: center;
+    border: 4px solid #008000;
 }
 
-.paragraph-container{
+.paragraph-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.paragraph {
+.bio-paragraph {
     font-size: 28px;
     border-radius: 5px;
     z-index: 10;
     position: relative;
     margin: 10px 55px;
-    font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-style: normal; font-variant: normal; font-weight: 700; line-height: 29.4px;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 29.4px;
     border: 4px solid #008000;
 }
 
 @media screen and (max-width: 1900px) {
-    .paragraph{
+    .paragraph {
         width: 800px;
     }
 }
 
-.bio-title-container{
+.bio-title-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -170,18 +189,66 @@ font-size: 26px;
 
 }
 
+.tech-logo {
+    height: 80px;
+    width: 80px;
+}
+
+.tech-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tech-title {
+    font-family: Palatino, Tahoma, sans-serif;
+    font-size: 50px;
+}
+
 
 /*----Portfolio-stuff----*/
-
 .portfolio-container {
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 0 1rem;
+    margin: auto;
+    max-width: 1200px
+
 }
 
 .responsive-image {
     height: 300px;
     width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.img-description {
+    position: relative;
+    padding: 0px 0px;
+    font-size: 38px;
+}
+
+.overlay {
+    position: relative;
+    display: flex;
+    top: -300px;
+    color: #fff;
+    opacity: 0;
+    z-index: 11;
+    padding: 0px 0px;
+    border: 2px solid #fff490;
+    height: 100%;
+
+}
+
+
+.overlay:hover {
+    transition: all 0.8s ease;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 1;
+}
+
+.portfolio .responsive-image:hover {
+    cursor: pointer;
+    color: #fff490;
 }
 
 @media screen and (min-width: 600px) {
@@ -190,8 +257,14 @@ font-size: 26px;
         flex-wrap: wrap;
         flex-direction: row;
     }
-    .cell {
+    .portfolio-cell {
         width: 50%;
+    }
+    .bio-container.grid {
+
+    }
+    .bio-container .cell {
+        width: calc(33.3333% - 2rem);
     }
 }
 
@@ -199,21 +272,37 @@ font-size: 26px;
     .cell {
         width: calc(100% / 3);
     }
+    .bio-container .cell {
+        width: calc(100% / 5);
+    }
 }
 
-.cell {
-    margin: 1rem;
+.portfolio-cell {
+     margin: 1rem 1rem 1rem 1rem;
+     border: 2px solid #008000;
+     height: 300px;
+ }
+
+.bio-container-cell {
+    margin: 1rem 1rem 1rem 1rem;
+    border: 2px solid #008000;
 }
 
-@media screen and (min-width: 600px) {
-    .cell {
+@media screen and (min-width: 680px) {
+    .portfolio-cell {
         width: calc(50% - 2rem);
+    }
+    .bio-container .cell {
+        width: calc(20% - 2rem);
     }
 }
 
 @media screen and (min-width: 1000px) {
-    .cell {
+    .portfolio-cell {
         width: calc(33.3333% - 2rem);
+    }
+    .bio-container .cell {
+        width: calc(20% - 2rem);
     }
 }
 
@@ -224,7 +313,7 @@ font-size: 26px;
 }
 
 
-.portfolio-title{
+.portfolio-title {
     margin: 0px 790px;
     font-size: 60px;
     text-align: center;
@@ -240,17 +329,17 @@ font-size: 26px;
 /*----contact-me-stuff*/
 
 .contact-me {
-     width: 100%;
-     overflow: auto;
-     border: 1px solid #FF0FA8;
-     padding: 30px 200px;
+    width: 100%;
+    overflow: auto;
+    border: 1px solid #FF0FA8;
+    padding: 30px 200px;
     font-size: 30px;
-    font-family: Palatino;
+    font-family: Tahoma, sans-serif;
  }
 
 .contact-title {
     padding: 0px 200px;
-    font-family: Palatino;
+    font-family: Palatino, Tahoma, sans-serif;
     font-size: 50px
 }
 
@@ -261,3 +350,5 @@ font-size: 26px;
     padding: 90px 50px;
     background-color: #FC7753;
 }
+
+
