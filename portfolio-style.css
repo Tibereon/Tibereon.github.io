@@ -1,3 +1,6 @@
+/*----Default----*/
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -13,8 +16,6 @@ html {
     overflow: auto;
 }
 
-/*----^^^Default^^^----*/
-
 /*----Landing-pages-styling----*/
 
 .nav-bar{
@@ -25,7 +26,7 @@ html {
 
 .name {
     float: left;
-    margin: 0px 10px;
+    margin: 0 10px;
     font-family: Palatino, Tahoma, sans-serif;
     color: #EAF2E3;
     font-size: 22px;
@@ -49,7 +50,7 @@ html {
 .hero {
     z-index: 10;
     top: -600px;
-    padding: 0px 20px;
+    padding: 0 20px;
     color: #ffffff;
     font-family: Verdana, Tahoma, sans-serif;
     position: relative;
@@ -59,7 +60,7 @@ html {
 .hero-description {
     z-index: 10;
     top: -640px;
-    padding: 0px 85px;
+    padding: 0 85px;
     color: #ffffff;
     font-family: Tahoma, Geneva, sans-serif;
     position: relative;
@@ -75,8 +76,8 @@ html {
     border: 3px solid #EAF2E3;
     background-color: Transparent;
     font-size: 20px;
-    padding: 0px 40px;
-    margin: 0px 100px;
+    padding: 0 40px;
+    margin: 0 100px;
     border-radius: 3px;
     transition-duration: 0.4s;
 }
@@ -88,15 +89,15 @@ html {
 
 @media screen and (max-width: 1400px) {
     .nav-links button{
-        margin: 0px 40px;
-        padding: 0px 20px;
+        margin: 0 40px;
+        padding: 0 20px;
     }
 }
 
 @media screen and (max-width: 1100px) {
     .nav-links button{
-        margin: 0px 4px;
-        padding: 0px 5px;
+        margin: 0 4px;
+        padding: 0 5px;
         font-size: 14px;
     }
 }
@@ -226,7 +227,7 @@ html {
     font-style: normal;
     font-variant: normal;
     font-weight: 700;
-    line-height: 29.4px;
+    line-height: 29px;
     border: 4px solid #008000;
 }
 
@@ -244,11 +245,10 @@ html {
 
 .bio-title{
     font-size: 60px;
-    margin: 0px 450px;
+    margin: 0 450px;
     text-align: center;
     vertical-align: middle;
     line-height: 90px;
-
 }
 
 /*----Logo-styling----*/
@@ -258,12 +258,10 @@ html {
     width: 80px;
 }
 
-
 .tech-container {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .tech-title {
@@ -279,12 +277,11 @@ html {
     text-transform: none;
 }
 
-
 /*----Portfolio-styling----*/
 
 .portfolio-container {
     margin: auto;
-    max-width: 1200px
+    max-width: 1200px;
 }
 
 .responsive-image {
@@ -296,7 +293,7 @@ html {
 
 .img-description {
     position: relative;
-    padding: 0px 0px;
+    padding: 0 0;
     font-size: 38px;
 }
 
@@ -310,9 +307,8 @@ html {
     border: 2px solid #fff490;
     height: 100%;
     text-align: center;
-    padding: 60px 0px 0px 60px;
+    padding: 60px 0 0 60px;
 }
-
 
 .overlay:hover {
     transition: all 0.8s ease;
@@ -331,12 +327,11 @@ html {
         flex-wrap: wrap;
         flex-direction: row;
     }
+
     .portfolio-cell {
         width: 50%;
     }
-    .bio-container.grid {
 
-    }
     .bio-container .cell {
         width: calc(33.3333% - 2rem);
     }
@@ -346,6 +341,7 @@ html {
     .portfolio-cell {
         width: calc(100% / 3);
     }
+
     .bio-container .cell {
         width: calc(100% / 5);
     }
@@ -364,6 +360,7 @@ html {
     .portfolio-cell {
         width: calc(50% - 2rem);
     }
+
     .bio-container-cell {
         width: calc(20% - 2rem);
     }
@@ -373,6 +370,7 @@ html {
     .portfolio-cell {
         width: calc(33.3333% - 2rem);
     }
+
     .bio-container .cell {
         width: calc(20% - 2rem);
     }
@@ -384,9 +382,8 @@ html {
     align-items: center;
 }
 
-
 .portfolio-title {
-    margin: 0px 790px;
+    margin: 0 790px;
     font-size: 60px;
     text-align: center;
     font-family: Verdana, Geneva, sans-serif;
@@ -402,7 +399,6 @@ html {
 
 .portfolio {
     background: #9BC53D;
-    align: center;
 }
 
 /*----contact-styling----*/
@@ -413,12 +409,12 @@ html {
     padding: 30px 200px;
     font-size: 30px;
     font-family: Tahoma, sans-serif;
- }
+}
 
 .contact-title {
-    padding: 0px 200px;
+    padding: 0 200px;
     font-family: Palatino, Tahoma, sans-serif;
-    font-size: 50px
+    font-size: 50px;
 }
 
 .contact-container {
@@ -442,25 +438,25 @@ html {
 
     .contact-title{
         padding: 20px 100px;
-        font-size: 42;
+        font-size: 42px;
     }
 }
 
 @media screen and (max-width: 600px) {
     .contact-container {
         width: 100%;
-        padding: 0px 0px;
+        padding: 0 0;
         font-size: 24px;
     }
 
     .contact-me {
         width: 100%;
         font-size: 22px;
-        padding: 10px 10px
+        padding: 10px 10px;
     }
 
     .contact-title{
         padding: 10px 10px;
-        font-size: 36;
+        font-size: 36px;
     }
 }
