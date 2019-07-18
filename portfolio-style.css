@@ -213,7 +213,7 @@ html {
 
 .responsive-image {
     height: 300px;
-    width: 300px;
+    width: 100%;
     display: block;
     margin: 0 auto;
 }
@@ -231,10 +231,10 @@ html {
     color: #fff;
     opacity: 0;
     z-index: 11;
-    padding: 0px 0px;
     border: 2px solid #fff490;
     height: 100%;
-
+    text-align: center;
+    padding: 60px 0px 0px 60px;
 }
 
 
@@ -277,20 +277,18 @@ html {
 
 .portfolio-cell {
      margin: 1rem 1rem 1rem 1rem;
-     border: 2px solid #008000;
      height: 300px;
  }
 
 .bio-container-cell {
     margin: 1rem 1rem 1rem 1rem;
-    border: 2px solid #008000;
 }
 
 @media screen and (min-width: 680px) {
     .portfolio-cell {
         width: calc(50% - 2rem);
     }
-    .bio-container .cell {
+    .bio-container-cell {
         width: calc(20% - 2rem);
     }
 }
@@ -329,7 +327,6 @@ html {
 .contact-me {
     width: 100%;
     overflow: auto;
-    border: 1px solid #FF0FA8;
     padding: 30px 200px;
     font-size: 30px;
     font-family: Tahoma, sans-serif;
@@ -344,7 +341,6 @@ html {
 .contact-container{
     width: 100%;
     overflow: auto;
-    border: 1px solid #FF0FA8;
     padding: 90px 50px;
     background-color: #FC7753;
 }
