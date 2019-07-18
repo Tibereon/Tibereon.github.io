@@ -29,9 +29,17 @@ html {
 
 }
 
+@media screen and (max-width: 1000px) {
+    .name {
+        position: relative;
+        margin: 10px 4px;
+        font-size: 18px;
+    }
+}
+
 @media screen and (max-width: 1100px) {
     .name {
-        margin: 0px 4px;
+        margin: 8px 4px;
         font-size: 18px
     }
 }
@@ -87,6 +95,13 @@ html {
     }
 }
 
+@media screen and (max-width: 1100px) {
+    .nav-links button{
+        margin: 2px 4px;
+        padding: 8px 5px;
+        font-size: 14px;
+    }
+}
 
 /*--Image stuff--*/
 
@@ -137,6 +152,43 @@ html {
     height: 200px;
 }
 
+@media screen and (max-width: 800px) {
+    .logo-links {
+        margin: 5px 120px;
+    }
+    .instagram-image{
+        width: 140px;
+        height: 140px;
+    }
+    .git-image{
+        width: 135px;
+        height: 135px;
+    }
+    .linkedin-image{
+        width: 135px;
+        height: 135px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .logo-links {
+        margin: 5px 40px;
+    }
+    .instagram-image{
+        width: 95px;
+        height: 95px;
+    }
+    .git-image{
+        width: 90px;
+        height: 90px;
+    }
+    .linkedin-image{
+        width: 90px;
+        height: 90px;
+    }
+}
+
+
 /*--Image stuff--*/
 
 .bio-container {
@@ -144,6 +196,12 @@ html {
     overflow: auto;
     text-align: center;
     border: 4px solid #008000;
+}
+
+@media screen and (max-width: 600px) {
+    .paragraph-container {
+        width: 400px;
+    }
 }
 
 .paragraph-container {
@@ -191,6 +249,7 @@ html {
     height: 80px;
     width: 80px;
 }
+
 
 .tech-container {
     display: flex;
@@ -267,7 +326,7 @@ html {
 }
 
 @media screen and (min-width: 1000px) {
-    .cell {
+    .portfolio-cell {
         width: calc(100% / 3);
     }
     .bio-container .cell {
@@ -338,11 +397,47 @@ html {
     font-size: 50px
 }
 
-.contact-container{
+.contact-container {
     width: 100%;
     overflow: auto;
     padding: 90px 50px;
     background-color: #FC7753;
 }
+
+@media screen and (max-width: 800px) {
+    .contact-me {
+        width: 100%;
+        padding: 20px 100px;
+        font-size: 26px;
+    }
+    .contact-container{
+        padding: 20px 00px;
+        font-size: 44px;
+    }
+    .contact-title{
+        padding: 20px 100px;
+        font-size: 42;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contact-container {
+        width: 100%;
+        padding: 0px 0px;
+        font-size: 24px;
+    }
+    .contact-me {
+        width: 100%;
+        font-size: 22px;
+        padding: 10px 10px
+    }
+    .contact-title{
+        padding: 10px 10px;
+        font-size: 36;
+    }
+}
+
+
+
 
 
