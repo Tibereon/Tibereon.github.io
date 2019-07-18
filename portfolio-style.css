@@ -26,7 +26,6 @@ html {
     font-family: Palatino, Tahoma, sans-serif;
     color: #EAF2E3;
     font-size: 22px;
-
 }
 
 @media screen and (max-width: 1000px) {
@@ -54,7 +53,7 @@ html {
     font-size: 32px;
 }
 
-.squire {
+.hero-description {
     z-index: 10;
     top: -640px;
     padding: 0px 85px;
@@ -236,7 +235,7 @@ html {
     align-items: center;
 }
 
-.Bio {
+.bio-title{
     font-size: 60px;
     margin: 0px 450px;
     text-align: center;
@@ -372,14 +371,11 @@ html {
     margin: 0px 790px;
     font-size: 60px;
     text-align: center;
-
-
 }
 
 .portfolio {
     background: #43AA8B;
     align: center;
-
 }
 /*----contact-me-stuff*/
 
@@ -436,8 +432,3 @@ html {
         font-size: 36;
     }
 }
-
-
-
-
-
